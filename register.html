@@ -94,6 +94,16 @@ form h2{
     transition: .3s;
 
 }
+.error {
+    color: red ;
+    font-size: small;
+}
+
+
+
+
+
+
 .input-div:after {
     right: 50%;
 }
@@ -224,7 +234,7 @@ transition: .3s;
             <img src="./images/Register.png" alt="Registerpic">
         </div>
         <div class="login-container">
-            <form action="login.html" method="post">
+            <form action="" method="post">
 
                 <div class="input-div one">
                   <div class="i">
@@ -232,9 +242,9 @@ transition: .3s;
                   </div>
                   <div>
                      <h5>First Name</h5>
-                     <input class="input" type="text" name="Username">
-                     <p id="errorfname"></p>
-                  </div>
+                     <input class="input" type="text" name="firstname" id="firstname" required>
+                     <div class="error" id="errorFirstname"></div>
+                    </div>
                 </div>
 
                 <div class="input-div one">
@@ -243,7 +253,7 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Middle Name</h5>
-                       <input class="input" type="text" name="MiddleName">
+                       <input class="input" type="text" name="middlename" id="middlename" required>
                     </div>
                   </div>
                   
@@ -253,7 +263,9 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Last Name</h5>
-                       <input class="input" type="text" name="LastName">
+                       <input class="input" type="text" name="lastname" id="lastname" required>
+                       <div class="error" id="errorLastname"></div>
+
                     </div>
                   </div>
 
@@ -264,7 +276,7 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Family Name</h5>
-                       <input class="input" type="text" name="FamilyName">
+                       <input class="input" type="text" name="familyname" id="familyname"required>
                     </div>
                   </div>
 
@@ -274,7 +286,9 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Password</h5>
-                       <input class="input" type="password" name="Password">
+                       <input class="input" type="password" name="password" id="password" required>
+                       <div class="error" id="errorPassword"></div>
+
                     </div>
                   </div>
 
@@ -284,7 +298,9 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Confirm Password</h5>
-                       <input class="input" type="password" name="ConfirmPassword">
+                       <input class="input" type="password" name="confirmpassword" id="confirmpassword" required>
+                       <div class="error" id="errorConfirmpassword"></div>
+
                     </div>
                   </div>
 
@@ -294,7 +310,8 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Email</h5>
-                       <input class="input" type="text" name="Email">
+                       <input class="input" type="email" name="email" id="email" required>
+                       <div class="error" id="errorEmail"></div>
                     </div>
                   </div>
                   
@@ -304,7 +321,9 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Phone Number</h5>
-                       <input class="input" type="number" name="PhoneNumber">
+                       <input class="input" type="number" name="phonenumber" id="phonenumber" required>
+                       <div class="error" id="errorPhonenumber"></div>
+
                     </div>
                   </div>
                   
@@ -314,12 +333,14 @@ transition: .3s;
                     </div>
                     <div>
                        <h5>Date of Birth</h5>
-                       <input class="input" type="date" name="DateofBirth">
+                       <input class="input" type="date" name="dateofbirth" id="dateofbirth" required>
+                       <div class="error" id="errorDateofbirth"></div>
+
                     </div>
                   </div>
                   
                   
-                <input type="submit" class="bton" value="Register" name="Register-btn">
+                <input type="submit" class="bton" value="Register" name="register-btn" id="register-btn">
             </form>
 
         </div>
@@ -327,3 +348,4 @@ transition: .3s;
 </body>
 <script src="register.js"></script>
 </html>
+
